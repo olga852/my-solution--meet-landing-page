@@ -27,14 +27,17 @@
 ### Скриншот
 
 Мобильный
+
 ![image](https://user-images.githubusercontent.com/90684029/140928214-204d2cde-a809-4ef6-9926-4cab9e28ee95.png)
 
 
 Планшет
+
 ![image](https://user-images.githubusercontent.com/90684029/140927995-7b4c1f55-6a15-4fb5-99a7-e96db7bc08a7.png)
 
 
 Десктоп
+
 ![image](https://user-images.githubusercontent.com/90684029/140927625-c6c71f2d-a13c-41e6-9556-3dd63bded835.png)
 
 
