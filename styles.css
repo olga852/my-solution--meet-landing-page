@@ -1,37 +1,40 @@
 /* Colors */
 :root {
-    --greenblue: rgb(77, 150, 168);
-    --violet: rgb(133, 95, 177);
-    --darkgray: rgb(40, 40, 61);
-    --gray: rgb(135, 135, 157);
-    --skyblue: rgb(143, 227, 249);
-    --light-violet: rgb(217, 184, 255);
-    --white: rgb(250, 250, 250);
+  --greenblue: rgb(77, 150, 168);
+  --violet: rgb(133, 95, 177);
+  --darkgray: rgb(40, 40, 61);
+  --gray: rgb(135, 135, 157);
+  --skyblue: rgb(143, 227, 249);
+  --light-violet: rgb(217, 184, 255);
+  --white: rgb(250, 250, 250);
 }
 
 /* Typography */
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
 
 /* ============
     mobile
    ============ */
 
 /* Global styles */
-html {
-    box-sizing: border-box;
-    background-color: var(--white);
-    overflow-x: hidden;
-  }
-*, *:before, *:after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-  }
+html,
 body {
-  font-family: 'Red Hat Display', sans-serif;
+  overflow-x: hidden;
 }
-
+html {
+  box-sizing: border-box;
+  background-color: var(--white);
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
 h1 {
   color: var(--darkgray);
   margin: 3rem 0 1.5rem;
@@ -49,12 +52,9 @@ p {
 }
 
 /* Global classes */
-.none {
-  display: none;
-}
 .center {
   text-align: center;
-  margin: 1.5rem 1.5rem 0 1.5rem; 
+  margin: 1.5rem 1.5rem 0 1.5rem;
 }
 
 /* Top section */
@@ -63,36 +63,38 @@ p {
   width: 120px;
   height: 28px;
   margin: 3rem auto 3.5rem;
-  background: url('assets/logo.svg') no-repeat;
+  background: url("assets/logo.svg") no-repeat;
 }
-
 .img-responsive {
   height: 153px;
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  
 }
+.wings {
+  display: none;
+}
+
 /* Gallery */
 .about {
   position: relative;
 }
-.about .number{
+.about .number {
   top: -6rem;
 }
 .about .vertical-line {
-  top: -11.2rem
+  top: -11.2rem;
 }
 .images {
   display: grid;
   position: relative;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
-  margin-top: 16em;
+  margin: 16em auto 0;
 }
 .images img {
   width: 100%;
-  border-radius: 7%;
+  border-radius: 10px;
 }
 
 /* Description */
@@ -107,11 +109,14 @@ p {
 /* Footer */
 footer {
   position: relative;
+  height: 26.75rem;
   margin-top: 10em;
   padding: 3.9rem 0 3.5rem;
-  background: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)), url('assets/mobile/image-footer.jpg') no-repeat bottom/100% ;
+  background: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.9)),
+    url("assets/mobile/image-footer.jpg") no-repeat;
+  background-position: top center;
+  background-size: cover;
 }
-
 footer h2,
 footer p {
   color: var(--white);
@@ -124,6 +129,8 @@ button {
   padding: 1.5em 3em;
   border-radius: 1.8rem;
   font-family: inherit;
+  font-weight: 900;
+  letter-spacing: 0.5px;
   color: var(--white);
   border: none;
 }
@@ -138,21 +145,19 @@ button {
 .download-top:hover {
   background-color: rgb(113, 192, 212);
 }
-.version-download-top {
+.version-top {
   color: var(--skyblue);
 }
-
 .download-bottom,
 .what-is {
   background-color: var(--violet);
 }
 .download-bottom:hover,
 .what-is:hover {
-  background-color: rgb(177,139,221);
+  background-color: rgb(177, 139, 221);
 }
-
-.version-download-bottom {
-  color: var(--light-violet);;
+.version-bottom {
+  color: var(--light-violet);
 }
 .number {
   position: absolute;
@@ -174,4 +179,91 @@ button {
   top: -6.7em;
   left: 50%;
   border-left: 1px solid var(--gray);
+}
+
+/* ============
+    Tablet
+   ============ */
+
+@media (min-width: 700px) {
+  h2 {
+    padding: 0.5rem 13rem 2.7rem;
+  }
+  .img-responsive {
+    height: auto;
+  }
+  .p-width {
+    width: 33.75rem;
+    margin: 0 auto;
+  }
+  button {
+    display: inline-block;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  footer {
+    background-image: linear-gradient(
+        rgba(77, 150, 168, 0.9),
+        rgba(77, 150, 168, 0.9)
+      ),
+      url("assets/tablet/image-footer.jpg");
+  }
+  footer button {
+    margin-top: 1.5rem;
+  }
+}
+
+/* ============
+    Desktop
+   ============ */
+
+@media (min-width: 1150px) {
+  h1 {
+    margin-top: 5rem;
+  }
+  .img-responsive {
+    display: none;
+  }
+  .main-section::before {
+    content: url("assets/desktop/image-hero-left.png");
+    position: absolute;
+    left: -2rem;
+    top: 7rem;
+  }
+  .main-section::after {
+    content: url("assets/desktop/image-hero-right.png");
+    position: absolute;
+    right: -2rem;
+    top: 10rem;
+  }
+  .images,
+  .footer-flex {
+    width: 69.375rem;
+  }
+  .footer-flex {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin: 4rem auto 1rem;
+  }
+  .footer-flex h2,
+  .footer-flex p {
+    padding: 0;
+  }
+  .footer-flex h2,
+  .footer-flex p {
+    flex-basis: 40%;
+    padding-right: 8rem;
+  }
+  footer {
+    height: auto;
+    background-image: linear-gradient(
+        rgba(77, 150, 168, 0.9),
+        rgba(77, 150, 168, 0.9)
+      ),
+      url("assets/desktop/image-footer.jpg");
+  }
 }
