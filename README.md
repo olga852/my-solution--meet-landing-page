@@ -2,7 +2,7 @@
 
 ## Содержание
 
--[Обзор](#обзор)
+- [Обзор](#обзор)
 
 - [Задача](#задача)
 - [Скриншот](#скриншот)
@@ -28,8 +28,8 @@
 
 ### Ссылки
 
-- Решение на github URL: [Add solution URL here](https://your-solution-url.com)
-- Сайт URL: [Add live site URL here](https://your-live-site-url.com)
+- Решение URL: [Github](https://your-solution-url.com)
+- Сайт URL: [Github pages](https://olga852.github.io/my-solution--meet-landing-page/)
 
 ## Мой процесс
 
