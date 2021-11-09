@@ -54,7 +54,7 @@
 }
 ```
 
-Как правильно использовать overflow-x для мобильных
+Как правильно использовать overflow-x с мобильными устройствами
 
 ```css
 html,
@@ -68,10 +68,10 @@ body {
 ### Полезные ресурсы
 
 - [Про псевдо элементы before и after](https://www.youtube.com/watch?v=zGiirUiWslI&list=PLSCr865IKB-1aBfy8dUOgHuQJBUvI4SWB&index=3) - Видео помогло расположить два изображения по бокам главной секции в десктоп версии
-- [Что делать, если overflow-x не работает на мобильном устройстве](https://stackoverflow.com/questions/24193272/overflow-xhidden-on-mobile-device-not-working) - ответы на вопросы. Stack overflow
+- [Что делать, если overflow-x не работает на мобильном устройстве](https://stackoverflow.com/questions/24193272/overflow-xhidden-on-mobile-device-not-working) - Ответы на вопросы. Stack overflow
 
 ## Автор
 
-olga 852
+olga852
 
 ## Признательность
